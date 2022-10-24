@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Responsivo</title>    
+    <link type="text/CSS" rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+   <div class="container">
+<div id="nav">
+
+        
+        
+        <div id="player">
+            <audio src="https://stream-57.zeno.fm/z5ua73hagc9uv"></audio>
+            
+            <img onclick="play()"src="https://blogger.googleusercontent.com/img/a/AVvXsEhy4RtFSFxDSYQys0JNrJKrMTfExOF34s96a6yr6pmVWvChSx17-5-v_8lgi-_9eapKD6spzdiZE_7HV4kSO24oxCbrGVXIpF3BCCN-rtYAtriaoc4fgIo7pMxRYqeHgXKGrRpMYoQ6I7dQj7yf-hQjFJitUNgPWYIxlGdaDtyKb4Hxzo53BLufeIgbyg=s1600" id="play" title="Ouça Agora" > &nbsp;
+            <img onclick="pause()"src="https://blogger.googleusercontent.com/img/a/AVvXsEj0xaTBV_eYPnpFt8jAeOaN4qXGtjX0FkYKIUPht-7rZLMZNDD_XmMPXTyOr-NyPYXhkDQ11LK67XpH7RAeNf7QOJR0_vK54n-fah_rlryfMhH1yL_Thg7KkNarMxdVgR9R8DB51tRkMrBCEabzeerzepjCbWg0AfEF3xc6Si8D2nJ8FvUjgBwgOBKX4g=s1600" id="pause" title="Ouvindo" >&nbsp;&nbsp; 
+            
+            <script>
+            {
+                
+                document.querySelector("#play").style.display = "block";
+                document.querySelector("#pause").style.display = "none";
+                
+            }
+    
+            var audio = document.querySelector("audio")
+            function pause(){
+                audio.pause();
+                document.querySelector("#pause").style.display = "none";
+                document.querySelector("#play").style.display = "block";
+                
+            }
+
+            var audio = document.querySelector("audio")
+            function play() {
+                audio.play();
+                document.querySelector("#play").style.display = "none";
+                document.querySelector("#pause").style.display = "block";
+               
+               
+               }
+            </script>
+             
+
+</div>
+</div>
+</div>
+</body>
+</html>
